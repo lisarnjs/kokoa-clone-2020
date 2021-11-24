@@ -1,0 +1,58 @@
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
+    /* 글자들의 위치를 옆에 배치 */
+    display: flex;
+    /* welcome-header__text를 title밑에 배치 */
+    flex-direction: column;
+    /* welcome-header__text를 가운데에 배치 */
+    align-items: center;
+}
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.welcome-header__text {
+    width: 60%;
+    /* 글자의 불투명도 = opacity */
+    opacity: 0.7;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+#login-form input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+/* input type="submit"이 아닌 경우 */
+#login-form input:not([type="submit"]){
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+    color: rgba(0,0,0,0.4);
+}
+
+#login-form input:focus {
+    border-color: var(--yellow);
+}
+/* input type="submit" 인 경우 
+   #login-form input[type="submit"] = .login-form__btn {} */
+#login-form input[type="submit"]{
+    background-color: var(--yellow);
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 13px;
+}

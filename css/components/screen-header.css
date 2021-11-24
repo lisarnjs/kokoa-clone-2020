@@ -1,0 +1,30 @@
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--horizontal-space);
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    opacity: 90%;
+}
+.screen-header__title {
+    font-size: 32px;
+    font-weight: 600;
+}
+.screen-header__icons span {
+    margin-left: 20px;
+}
+.screen-header__dot {
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    display: flex;
+    right: 20px;
+    top: 50px;
+}
+.screen-header__icons a {
+    color: inherit;
+	text-decoration: none;
+}
